@@ -1,6 +1,6 @@
 from game_files.character import Character
 from game_files.level import Level
-from game_files.main_menu import Menu
+from game_files.menu import Menu
 
 menu = Menu()
 button = menu.main()
