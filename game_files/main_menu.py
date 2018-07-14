@@ -59,3 +59,9 @@ class Menu:
 
             elif (self.options_button_rect.collidepoint(x, y) and pygame.mouse.get_pressed()[0]):
                 return "options"
+
+    def saves(self):
+        pass
+
+    def options(self):
+        pass

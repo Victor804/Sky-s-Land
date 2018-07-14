@@ -9,10 +9,7 @@ if (button == "play"):
     print("play")
 
 elif (button == "saves"):
-    print("saves")
+    menu.saves()
 
 elif (button == "options"):
-    print("options")
-
-else:
-    print("Error")
+    menu.options()
