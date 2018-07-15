@@ -1,5 +1,4 @@
 from game_files.character import Character
-from game_files.level import Level
 from game_files.menu import Menu
 from game_files.game import Game
 
@@ -8,6 +7,7 @@ button = menu.main()
 
 if (button == "play"):
     game = Game()
+    game.maps(1)
 
 elif (button == "saves"):
     menu.saves()

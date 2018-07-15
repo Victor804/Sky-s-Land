@@ -1,15 +1,24 @@
 import pygame
 import os
+from game_files.level import Level
 
 class Game:
     def __init__(self):
         pygame.init()
-        self.display = pygame.display.set_mode((1920, 1080))
+
+        self.level = Level()
+
+        self.display = pygame.display.set_mode((1920, 1000))
 
         background = pygame.image.load(os.getcwd()+"/game_files/images/background.jpeg")
         self.display.blit(background, (0,0))
-        while True:
-            pygame.display.flip()
 
-        clock = pygame.time.Clock()
-        clock.tick(60)
+        self.grass = pygame.image.load(os.getcwd()+"/game_files/images/grass.jpeg")
+
+        pygame.display.flip()
+
+
+    def maps_draw(self, stage):
+        maps = self.level.load(1)
+        for i in maps:
+            self.display.blit(self.grass, i)
