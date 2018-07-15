@@ -7,7 +7,7 @@ button = menu.main()
 
 if (button == "play"):
     game = Game()
-    game.maps(1)
+    game.maps_draw()
 
 elif (button == "saves"):
     menu.saves()

@@ -18,7 +18,7 @@ class Game:
         pygame.display.flip()
 
 
-    def maps_draw(self, stage):
-        maps = self.level.load(1)
+    def maps_draw(self, stage=1):
+        maps = self.level.load(stage)
         for i in maps:
             self.display.blit(self.grass, i)

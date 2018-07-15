@@ -17,9 +17,4 @@ class Level:
                 self.x = 0
                 self.y+=40
 
-
         return self.maps
-
-if (__name__ == "__main__"):
-    level = Level()
-    print(level.load(1))
