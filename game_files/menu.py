@@ -1,6 +1,5 @@
 import pygame
 import os
-import numpy as np
 
 class Menu:
     def __init__(self):
